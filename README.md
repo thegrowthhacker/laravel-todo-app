@@ -1,4 +1,3 @@
-laravel-todo-app
-================
+# Laravel TODO App
 
-A sample application to help other developers learn about Laravel
+Coming soon...
