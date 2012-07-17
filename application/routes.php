@@ -26,9 +26,30 @@ Route::post('/', function()
 	if($val->passes())
 	{
 		// try to log the user in
+		$credentials = array(
+			'username' => Input::get('email'),
+			'password' => Input::get('password'),
+			'remember' => (Input::get('remember') == 'y'),
+		);
+		
+		if(Auth::attempt($credentials))
+		{
+			return Redirect::to('lists');
+		}
+		
+		$val = new Laravel\Messages('Email address or password was incorrect.');
 	}
 	
 	return Redirect::to('/')->with_errors($val)->with_input();
+});
+
+// Logout
+// GET /logout
+Route::get('logout', function()
+{
+	Auth::logout();
+	
+	return Redirect::to('/');
 });
 
 

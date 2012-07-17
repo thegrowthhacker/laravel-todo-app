@@ -16,6 +16,10 @@
 	<!-- page header -->
 	<header id="page-header">
 		<h1>TODO Application</h1>
+		
+		@if(Auth::check())
+			{{ HTML::link('logout', 'Log out') }}
+		@endif
 	</header>
 	
 	<!-- main content -->

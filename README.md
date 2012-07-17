@@ -23,3 +23,5 @@ Description coming soon...
 		1. Login validation
 		1. Create the user model
 		1. Create users table/migration
+		1. Create login functionality
+		1. Create logout link on default layout
