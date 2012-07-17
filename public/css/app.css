@@ -1,0 +1,52 @@
+/* Foundation ----- */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #333;
+	font: 13px/normal "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Main Structure ----- */
+
+#page-header {
+	border-bottom: 3px solid #ddd;
+	margin: 0 auto;
+	width: 940px;
+}
+#content {
+	margin: 2em auto;
+	width: 940px;
+}
+#page-footer {
+	border-top: 3px solid #ddd;
+	margin: 0 auto;
+	padding: 1em 0 2em;
+	width: 940px;
+}
+
+
+/* Forms ----- */
+
+div.fields {
+	margin: 0.5em 0;
+}
+div.fields > label {
+	display: inline-block;;
+	font-weight: bold;
+	width: 120px;
+}
+div.fields label.checkbox {
+	display: inline;
+	font-weight: normal;
+	width: auto;
+}
+div.fields input[type=text],
+div.fields input[type=password] {
+	width: 250px;
+}
