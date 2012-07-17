@@ -4,6 +4,8 @@
 // Application Routes
 // ------------------------------------------------------------
 
+include path('app').'routes/lists.php';
+
 // Login page
 // GET /
 Route::get('/', function()
