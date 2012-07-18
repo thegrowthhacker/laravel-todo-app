@@ -8,12 +8,12 @@ include path('app').'routes/lists.php';
 
 // Login page
 // GET /
-Route::get('/', function()
+Route::get('/', array('as' => 'home', function()
 {
 	return View::make('app.index', array(
 		'title' => 'Home',
 	));
-});
+}));
 
 // Login action
 // POST /

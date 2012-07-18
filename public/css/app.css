@@ -50,3 +50,6 @@ div.fields input[type=text],
 div.fields input[type=password] {
 	width: 250px;
 }
+ul.errors {
+	color: #c00;
+}

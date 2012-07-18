@@ -30,6 +30,8 @@ Route::filter('auth', function()
 {
 	if (Auth::guest())
 	{
-		return Redirect::to('login');
+		$errors = new Laravel\Messages('You must be logged in to view this page.');
+		
+		return Redirect::to_route('home')->with_errors($errors);
 	}
 });
