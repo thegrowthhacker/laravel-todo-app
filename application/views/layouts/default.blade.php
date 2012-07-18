@@ -18,7 +18,10 @@
 		<h1>TODO Application</h1>
 		
 		@if(Auth::check())
-			{{ HTML::link('logout', 'Log out') }}
+			<ul id="nav">
+				<li>{{ HTML::link('lists', 'My Lists') }}</li>
+				<li>{{ HTML::link('logout', 'Log out') }}</li>
+			</ul>
 		@endif
 	</header>
 	

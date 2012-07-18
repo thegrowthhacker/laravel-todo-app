@@ -10,6 +10,12 @@ include path('app').'routes/lists.php';
 // GET /
 Route::get('/', array('as' => 'home', function()
 {
+	// redirect logged in users to their lists
+	if(Auth::check())
+	{
+		return Redirect::to('lists');
+	}
+	
 	return View::make('app.index', array(
 		'title' => 'Home',
 	));
